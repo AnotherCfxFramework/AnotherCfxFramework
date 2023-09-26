@@ -2,8 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>net452</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CitizenFX.Core">
+      <HintPath>Binaries\CitizenFX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenFX.FiveM">
+      <HintPath>Binaries\CitizenFX.FiveM.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenFX.FiveM.Native">
+      <HintPath>Binaries\CitizenFX.FiveM.Native.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>

@@ -2,8 +2,24 @@
 
   <PropertyGroup>
     <TargetFramework>net452</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="1.60.6" />
+    <PackageReference Include="DapperExtensions" Version="1.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CitizenFX.Core">
+      <HintPath>Binaries\CitizenFX.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenFX.FiveM.Native">
+      <HintPath>..\AnotherCfxFramework.Client\Binaries\CitizenFX.FiveM.Native.dll</HintPath>
+    </Reference>
+    <Reference Include="CitizenFX.Server">
+      <HintPath>Binaries\CitizenFX.Server.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 
 </Project>
